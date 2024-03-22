@@ -1,10 +1,17 @@
+import { getSession } from '@auth0/nextjs-auth0';
 
-function Dashboard() {
+async function Dashboard() {
+  const session = await getSession();
   return (
     <div>
+      {session?.user && // Check if session user exists
+        <div>
+          <p>Email: {session.user.email}</p> {/* Display user email */}
+        </div>
+      }
       <h1>Dashboard</h1>
     </div>
-  )
+  );
 }
 
-export default Dashboard
+export default Dashboard;
