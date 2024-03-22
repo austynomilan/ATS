@@ -4,7 +4,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { UserProvider } from '@auth0/nextjs-auth0/client';
 import './globals.css';
 import Header from '@/components/Header';
-import { useState } from 'react';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
