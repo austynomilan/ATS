@@ -107,7 +107,7 @@ function Section1() {
       </div>
       <div className='flex flex-col text-center mt-16'>
         <h3 className='font-bold text-2xl'>What is included?</h3>
-        <p className='text-sm text-gray-400 mt-5'>
+        <p className='text-sm text-gray-400 mt-5 mb-7'>
           Open your FREE account today to gain access to the following tools!
         </p>
       </div>

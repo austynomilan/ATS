@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Section1 from '@/components/Section1';
 import { Button } from '@/components/ui/button';
 import { getSession } from '@auth0/nextjs-auth0';
@@ -88,6 +89,7 @@ export default async function Home() {
       </div>
 
       <Section1 />
+      <Footer />
     </main>
   );
 }
