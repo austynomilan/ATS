@@ -4,8 +4,12 @@ const nextConfig = {
         remotePatterns:[
             {
                 protocol: "https",
-                hostname: "www.trustpilot.net"
-            }
+                hostname: 'www.trustpilot.net'
+            },
+            {
+                protocol: "https",
+                hostname: 'media.istockphoto.com'
+            },
         ]
     }
 };

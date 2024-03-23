@@ -1,4 +1,3 @@
-// enter your javascript code here
 'use client';
 
 import { useState, useEffect } from 'react';
