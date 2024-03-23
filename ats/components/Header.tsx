@@ -19,7 +19,7 @@ export default function Header() {
   }, [user]);
 
   return (
-    <header className='bg-[#635dff] h-16 flex justify-between content-center pl-52 pr-5'>
+    <header className=' bg-[#635dff] h-16 flex justify-between content-center pl-52 pr-5 fixed inset-x-0 top-0 z-50'>
       <Link href='/' className='text-5xl font-bold text-white pt-2'>
         <h1 className='drop-shadow-2xl'>R</h1>
       </Link>

@@ -28,7 +28,7 @@ export default async function Home() {
   );
 
   return (
-    <main className='flex flex-col justify-between'>
+    <main className='flex flex-col justify-between mt-20'>
       <div className='relative h-full'>
         <div className='flex text-black dark:text-white'>
           <div className='pl-52 pt-20'>
