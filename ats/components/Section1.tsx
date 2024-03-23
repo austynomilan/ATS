@@ -12,7 +12,7 @@ function Section1() {
             width={250}
             alt='recruitment'
           />
-          <a href=''>
+          <a href='/api/auth/login'>
             <Button className='bg-white mt-10 text-[#6662f5] border-2 border-[#6662f5] hover:bg-[#6662f5] hover:text-white'>
               Sign Up For Free
             </Button>

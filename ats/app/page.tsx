@@ -43,12 +43,15 @@ export default async function Home() {
               <br />
               software for recruiters.
             </h2>
-            <Button
-              variant='outline'
-              className='w-60 mt-5 mb-6 border-2 border-[#6662f5] dark:border-white text-[#6662f5] font-semibold hover:bg-[#6662f5] hover:text-white'
-            >
-              Sign Up For Free
-            </Button>
+            <a href='/api/auth/login'>
+              <Button
+                variant='outline'
+                className='w-60 mt-5 mb-6 border-2 border-[#6662f5] dark:border-white text-[#6662f5] font-semibold hover:bg-[#6662f5] hover:text-white'
+              >
+                Sign Up For Free
+              </Button>
+            </a>
+
             <p className='absolute bottom-40 text-white'>
               Read our review on Trust Pilot.
             </p>
