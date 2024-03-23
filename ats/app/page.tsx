@@ -1,3 +1,4 @@
+import Section1 from '@/components/Section1';
 import { Button } from '@/components/ui/button';
 import { getSession } from '@auth0/nextjs-auth0';
 import Image from 'next/image';
@@ -86,7 +87,7 @@ export default async function Home() {
         </div>
       </div>
 
-      
+      <Section1 />
     </main>
   );
 }
