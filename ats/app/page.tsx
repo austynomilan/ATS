@@ -18,7 +18,7 @@ export default async function Home() {
       viewBox='0 0 24 24'
       stroke-width='1.5'
       stroke='green'
-      className='w-6 h-6'
+      className='w-4 h-4'
     >
       <path
         stroke-linecap='round'
@@ -29,11 +29,11 @@ export default async function Home() {
   );
 
   return (
-    <main className='flex flex-col justify-between mt-20'>
-      <div className='relative h-full'>
-        <div className='flex text-black dark:text-white'>
-          <div className='pl-52 pt-20'>
-            <h1 className='text-6xl font-bold'>
+    <main className='mt-20 relative'>
+      <div className='h-full'>
+        <div className='flex flex-col justify-center text-center content-center'>
+          <div>
+            <h1 className='text-6xl font-bold pt-16'>
               Free <br />
               Recruitment <br />
               Software
@@ -46,23 +46,38 @@ export default async function Home() {
             <a href='/api/auth/login'>
               <Button
                 variant='outline'
-                className='w-60 mt-5 mb-6 border-2 border-[#6662f5] dark:border-white text-[#6662f5] font-semibold hover:bg-[#6662f5] hover:text-white'
+                className='w-60 mt-20 mb-6 border-2 border-[#6662f5] dark:border-white text-[#6662f5] font-semibold hover:bg-[#6662f5] hover:text-white'
               >
                 Sign Up For Free
               </Button>
             </a>
+          </div>
 
-            <p className='absolute bottom-40 text-white'>
-              Read our review on Trust Pilot.
-            </p>
-            <div className='flex mt-10 mb-28 relative'>
+          <div className='top-[501px] flex items-center justify-center'>
+            <Image
+              src='https://media.istockphoto.com/id/1065072428/photo/man-in-suit-and-tie-give-hand-as-hello-in-office.jpg?s=1024x1024&w=is&k=20&c=iK1fJp2cpEhutQxReEV2553V6Dh1iLw_yn-CR525dsY='
+              height={400}
+              width={400}
+              alt='recruitment'
+              className='rounded-full w-24 h-24'
+            />
+          </div>
+        </div>
+
+        {/* rating on trust pilot */}
+        <div className=' '>
+          <p className=''>Read our review on Trust Pilot.</p>
+          <div>
+            <div className=''>
               <Image
                 src='https://cdn.trustpilot.net/brand-assets/4.1.0/logo-white.svg'
-                height={200}
-                width={150}
+                height={150}
+                width={100}
                 alt='trustpilot logo'
+                // className='absolute left-5 top-[631px]'
               />
-              <div className='flex absolute top-3 left-40'>
+              <div className='flex absolute '>
+                {/* top-[640px] left-36 */}
                 {STAR}
                 {STAR}
                 {STAR}
@@ -70,17 +85,10 @@ export default async function Home() {
               </div>
             </div>
           </div>
-          <div className=''>
-            <Image
-              src='https://media.istockphoto.com/id/1065072428/photo/man-in-suit-and-tie-give-hand-as-hello-in-office.jpg?s=1024x1024&w=is&k=20&c=iK1fJp2cpEhutQxReEV2553V6Dh1iLw_yn-CR525dsY='
-              height={400}
-              width={400}
-              alt='recruitment'
-              className='rounded-full absolute top-24 right-24'
-            />
-          </div>
         </div>
-        <div className='-mt-72'>
+
+        {/* curve */}
+        <div className='mt-10'>
           <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
             <path
               fill='#6662f5'

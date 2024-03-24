@@ -19,21 +19,24 @@ export default function Header() {
   }, [user]);
 
   return (
-    <header className=' bg-[#635dff] h-16 flex justify-between content-center pl-52 pr-5 fixed inset-x-0 top-0 z-50'>
-      <Link href='/' className='text-5xl font-bold text-white pt-2'>
-        <h1 className='drop-shadow-2xl'>R</h1>
-      </Link>
-      <div className='flex justify-center content-center'>
-        <div className='mr-48'>
-          <ul className='flex font-bold text-white pt-5'>
-            <li className='pr-10'>
+    <header className=' bg-[#635dff] h-16 fixed inset-x-0 top-0 z-50 flex justify-between'>
+      <div className='flex items-center'>
+        <Link href='/' className='text-5xl font-bold text-white'>
+          R
+        </Link>
+      </div>
+
+      <div className=''>
+        <div>
+          <ul className=''>
+            <li className=''>
               <Link href='/'>Job Board</Link>
             </li>
-            <li className='pr-10'>Pricing</li>
-            <li className='pr-10'>Blog</li>
+            <li className=''>Pricing</li>
+            <li className=''>Blog</li>
           </ul>
         </div>
-        <div className='flex justify-center content-center pt-2'>
+        <div className='flex flex-col'>
           {!isLoading && isAuthenticated ? (
             <a href='api/auth/logout'>
               <Button variant='outline' className='mr-2 bg-white'>

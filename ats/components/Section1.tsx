@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 function Section1() {
   return (
     <>
-      <div className='flex justify-between'>
+      <div className=''>
         <div className='mt-40 ml-52 mr-20 flex flex-col items-center'>
           <Image
             src='https://media.istockphoto.com/id/1065072428/photo/man-in-suit-and-tie-give-hand-as-hello-in-office.jpg?s=1024x1024&w=is&k=20&c=iK1fJp2cpEhutQxReEV2553V6Dh1iLw_yn-CR525dsY='
