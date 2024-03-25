@@ -17,7 +17,7 @@ export default async function Home() {
       fill='green'
       viewBox='0 0 24 24'
       stroke-width='1.5'
-      stroke='green'
+      stroke='light green'
       className='w-4 h-4'
     >
       <path
@@ -46,29 +46,31 @@ export default async function Home() {
             <a href='/api/auth/login'>
               <Button
                 variant='outline'
-                className='w-60 mt-20 mb-6 border-2 border-[#6662f5] dark:border-white text-[#6662f5] font-semibold hover:bg-[#6662f5] hover:text-white'
+                className='w-60 mt-20 mb-24 border-2 border-[#6662f5] dark:border-white text-[#6662f5] font-semibold hover:bg-[#6662f5] hover:text-white'
               >
                 Sign Up For Free
               </Button>
             </a>
           </div>
 
-          <div className='top-[501px] flex items-center justify-center'>
+          <div className='flex items-center justify-center'>
             <Image
               src='https://media.istockphoto.com/id/1065072428/photo/man-in-suit-and-tie-give-hand-as-hello-in-office.jpg?s=1024x1024&w=is&k=20&c=iK1fJp2cpEhutQxReEV2553V6Dh1iLw_yn-CR525dsY='
               height={400}
               width={400}
               alt='recruitment'
-              className='rounded-full w-24 h-24'
+              className='rounded-full hidden'
             />
           </div>
         </div>
 
         {/* rating on trust pilot */}
-        <div className=' '>
-          <p className=''>Read our review on Trust Pilot.</p>
+        <div className="bg-[url('/curve.svg')] bg-no-repeat bg-cover w-full pt-10 pl-5">
+          <p className='text-[12px] text-white font-semibold'>
+            Read our review on Trust Pilot.
+          </p>
           <div>
-            <div className=''>
+            <div className='flex'>
               <Image
                 src='https://cdn.trustpilot.net/brand-assets/4.1.0/logo-white.svg'
                 height={150}
@@ -76,7 +78,7 @@ export default async function Home() {
                 alt='trustpilot logo'
                 // className='absolute left-5 top-[631px]'
               />
-              <div className='flex absolute '>
+              <div className='flex mt-3'>
                 {/* top-[640px] left-36 */}
                 {STAR}
                 {STAR}
@@ -85,17 +87,6 @@ export default async function Home() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* curve */}
-        <div className='mt-10'>
-          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
-            <path
-              fill='#6662f5'
-              fill-opacity='1'
-              d='M0,0L30,16C60,32,120,64,180,85.3C240,107,300,117,360,112C420,107,480,85,540,101.3C600,117,660,171,720,186.7C780,203,840,181,900,144C960,107,1020,53,1080,37.3C1140,21,1200,43,1260,80C1320,117,1380,171,1410,197.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z'
-            ></path>
-          </svg>
         </div>
       </div>
 

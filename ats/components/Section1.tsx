@@ -5,12 +5,13 @@ function Section1() {
   return (
     <>
       <div className=''>
-        <div className='mt-40 ml-52 mr-20 flex flex-col items-center'>
+        <div className='mt-20 flex flex-col items-center text-center'>
           <Image
             src='https://media.istockphoto.com/id/1065072428/photo/man-in-suit-and-tie-give-hand-as-hello-in-office.jpg?s=1024x1024&w=is&k=20&c=iK1fJp2cpEhutQxReEV2553V6Dh1iLw_yn-CR525dsY='
             height={250}
             width={250}
             alt='recruitment'
+            className='w-72'
           />
           <a href='/api/auth/login'>
             <Button className='bg-white mt-10 text-[#6662f5] border-2 border-[#6662f5] hover:bg-[#6662f5] hover:text-white'>
@@ -18,21 +19,22 @@ function Section1() {
             </Button>
           </a>
         </div>
+
         <div className='pt-10'>
-          <h1 className='font-bold text-4xl'>
+          <h1 className='font-bold text-4xl pb-3 text-center'>
             Free All-In-One Recruitment Software
           </h1>
-          <p>
+          <p className='text-sm pb-10 md:text-base text-center'>
             Recruit all-in-one platform gives you all the tools you need, in one
             place to grow a successful <br /> recruitment business!
           </p>
           <div className='flex w-11/12 pl-5 items-center'>
-            <div className='flex justify-center items-center h-20 w-24 mr-10 rounded-full bg-[#6662f5] text-white mb-5 mt-5'>
+            <div className='flex justify-center items-center h-11 w-32 md:h-20 md:w-24 mr-5 md:mr-10 rounded-full bg-[#6662f5] text-white mb-5 mt-5'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
                 fill='currentColor'
-                className='w-12 h-12'
+                className='w-6 h-6 md:w-12 md:h-12'
               >
                 <path
                   fill-rule='evenodd'
@@ -48,20 +50,22 @@ function Section1() {
               </svg>
             </div>
             <div>
-              <h2 className='font-bold'>ALL THE TOOLS ONE PLATFORM</h2>
-              <p className='text-gray-400 text-base'>
+              <h2 className='font-bold text-sm md:text-base'>
+                ALL THE TOOLS ONE PLATFORM
+              </h2>
+              <p className='text-gray text-sm md:text-base'>
                 By creating a FREE account you get access to: A Website Builder,
                 CRM, ATS, Job Board & AI Recruitment Software.
               </p>
             </div>
           </div>
           <div className='flex w-11/12 pl-5 items-center'>
-            <div className='text-white flex justify-center items-center h-20 w-20 mr-10 rounded-full bg-[#6662f5] mb-5'>
+            <div className='text-white flex justify-center items-center h-10 w-20 md:h-20 md:w-24 mr-5 md:mr-10 rounded-full bg-[#6662f5] mb-5'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
                 fill='currentColor'
-                className='w-12 h-12'
+                className='w-6 h-6 md:w-12 md:h-12'
               >
                 <path d='M12.75 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM8.25 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM9.75 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM10.5 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM12.75 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM14.25 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 17.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 15.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM15 12.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM16.5 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z' />
                 <path
@@ -72,20 +76,22 @@ function Section1() {
               </svg>
             </div>
             <div>
-              <h2 className='font-bold'>NO TRIAL PERIOD</h2>
-              <p className='text-gray-400 text-base'>
+              <h2 className='font-bold text-sm md:text-base'>
+                NO TRIAL PERIOD
+              </h2>
+              <p className='text-gray text-sm md:text-base'>
                 You can use the <strong>Free Forever</strong> platform for as
                 long as you need to!
               </p>
             </div>
           </div>
           <div className='flex w-11/12 pl-5 items-center'>
-            <div className='text-white flex justify-center items-center h-20 w-20 mr-10 rounded-full bg-[#6662f5]'>
+            <div className='text-white flex justify-center items-center h-10 w-20 md:h-20 md:w-24 mr-5 md:mr-10 rounded-full bg-[#6662f5]'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
                 fill='currentColor'
-                className='w-12 h-12'
+                className='w-6 h-6 md:w-12 md:h-12'
               >
                 <path d='M4.5 3.75a3 3 0 0 0-3 3v.75h21v-.75a3 3 0 0 0-3-3h-15Z' />
                 <path
@@ -95,9 +101,11 @@ function Section1() {
                 />
               </svg>
             </div>
-            <div>
-              <h2 className='font-bold'>NO CREDIT CARD REQUIRED</h2>
-              <p className='text-gray-400 text-base'>
+            <div className=''>
+              <h2 className='font-bold text-sm md:text-base'>
+                NO CREDIT CARD REQUIRED
+              </h2>
+              <p className='text-gray text-sm md:text-base'>
                 Sign up for the <strong>Free Forever</strong> platform without
                 providing credit card details.
               </p>
@@ -105,6 +113,8 @@ function Section1() {
           </div>
         </div>
       </div>
+
+      
       <div className='flex flex-col text-center mt-16'>
         <h3 className='font-bold text-2xl'>What is included?</h3>
         <p className='text-sm text-gray-400 mt-5 mb-7'>

@@ -3,8 +3,8 @@ import { getSession } from '@auth0/nextjs-auth0';
 async function Dashboard() {
   const session = await getSession();
   return (
-    <div>
-      {session?.user && // Check if session user exists
+    <div className='mt-20'>
+      {session?.user && 
         <div>
           <p>Email: {session.user.email}</p> {/* Display user email */}
         </div>

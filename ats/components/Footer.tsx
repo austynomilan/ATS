@@ -37,16 +37,16 @@ function Footer() {
   );
   return (
     <div className='bg-[#6662f5] h-full flex flex-col items-center justify-center'>
-      <div className='w-1/2 text-center'>
+      <div className='text-center md:w-1/2'>
         <h1 className='font-bold text-5xl text-white pt-20'>R</h1>
-        <h2 className='font-bold text-4xl mt-20 text-white'>
+        <h2 className='font-bold text-2xl md:text-4xl mt-20 text-white'>
           &ldquo;The Next Big Recruiting Software&rdquo;
         </h2>
         <h3 className='text-white text-right text-sm mr-10'>
           Read This Review On Trustpilot
         </h3>
       </div>
-      <div className='flex mt-20 mb-20 text-white'>
+      <div className='flex mt-20 mb-20 text-white px-2'>
         <div className='mr-5'>
           <div className='flex items-center'>
             <Image
