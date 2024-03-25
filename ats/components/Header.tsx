@@ -44,8 +44,39 @@ export default function Header() {
         </Link>
       </div>
 
+      <div className='hidden md:block'>
+        <div className='flex items-center pr-5'>
+          <ul className='text-center font-bold flex text-white'>
+            <li className='mr-10'>
+              <Link href='/'>Job Board</Link>
+            </li>
+            <li className='mr-10'>Pricing</li>
+            <li className='mr-10'>Blog</li>
+          </ul>
+          <div className='flex items-center justify-center'>
+            {!isLoading && isAuthenticated ? (
+              <a href='api/auth/logout'>
+                <Button variant='outline' className='mr-2 bg-white'>
+                  Logout
+                </Button>
+              </a>
+            ) : (
+              <a href='/api/auth/login'>
+                <Button
+                  variant='outline'
+                  className='mr-2 h-12 w-34 p-4 bg-white text-black border-2 border-[#635dff] hover:bg-[#635dff] hover:border-white'
+                >
+                  Sign In
+                </Button>
+              </a>
+            )}
+            <ModeToggle />
+          </div>
+        </div>
+      </div>
+      {/* mobile view */}
       <div
-        className={`absolute h-[100vh] bg-[#635dff] w-full top-20 ${
+        className={`absolute h-[100vh] bg-[#635dff] w-full top-20 transition ease-in-out delay-3000  ${
           showMenu ? '' : 'hidden'
         }`}
       >

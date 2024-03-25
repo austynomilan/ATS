@@ -29,11 +29,11 @@ export default async function Home() {
   );
 
   return (
-    <main className='mt-20 relative'>
+    <main className='mt-20 relative md:mt-10'>
       <div className='h-full'>
-        <div className='flex flex-col justify-center text-center content-center'>
+        <div className='flex flex-col md:flex-row justify-center md:justify-between md:px-52 md:-mb-36 md:text-left text-center content-center'>
           <div>
-            <h1 className='text-6xl font-bold pt-16'>
+            <h1 className='text-6xl font-bold pt-16 md:pt-8'>
               Free <br />
               Recruitment <br />
               Software
@@ -53,24 +53,24 @@ export default async function Home() {
             </a>
           </div>
 
-          <div className='flex items-center justify-center'>
+          <div className='mt-20'>
             <Image
               src='https://media.istockphoto.com/id/1065072428/photo/man-in-suit-and-tie-give-hand-as-hello-in-office.jpg?s=1024x1024&w=is&k=20&c=iK1fJp2cpEhutQxReEV2553V6Dh1iLw_yn-CR525dsY='
               height={400}
               width={400}
               alt='recruitment'
-              className='rounded-full hidden'
+              className='rounded-full hidden md:inline'
             />
           </div>
         </div>
 
         {/* rating on trust pilot */}
-        <div className="bg-[url('/curve.svg')] bg-no-repeat bg-cover w-full pt-10 pl-5">
-          <p className='text-[12px] text-white font-semibold'>
+        <div className="bg-[url('/curve.svg')] bg-no-repeat bg-cover w-full pt-10 md:pt-56">
+          <p className='text-[12px] text-white font-semibold md:text-base md:-mt-28 md:pl-52'>
             Read our review on Trust Pilot.
           </p>
           <div>
-            <div className='flex'>
+            <div className='flex md:pl-52'>
               <Image
                 src='https://cdn.trustpilot.net/brand-assets/4.1.0/logo-white.svg'
                 height={150}

@@ -4,8 +4,8 @@ import { Button } from './ui/button';
 function Section1() {
   return (
     <>
-      <div className=''>
-        <div className='mt-20 flex flex-col items-center text-center'>
+      <div className='flex flex-col md:flex-row md:justify-between'>
+        <div className='mt-20 flex flex-col md:pt-36 md:pl-52  items-center text-center'>
           <Image
             src='https://media.istockphoto.com/id/1065072428/photo/man-in-suit-and-tie-give-hand-as-hello-in-office.jpg?s=1024x1024&w=is&k=20&c=iK1fJp2cpEhutQxReEV2553V6Dh1iLw_yn-CR525dsY='
             height={250}
@@ -28,8 +28,8 @@ function Section1() {
             Recruit all-in-one platform gives you all the tools you need, in one
             place to grow a successful <br /> recruitment business!
           </p>
-          <div className='flex w-11/12 pl-5 items-center'>
-            <div className='flex justify-center items-center h-11 w-32 md:h-20 md:w-24 mr-5 md:mr-10 rounded-full bg-[#6662f5] text-white mb-5 mt-5'>
+          <div className='flex w-11/12 pl-5 md:justify-center items-center  md:m-auto'>
+            <div className='flex justify-center items-center h-11 w-32 md:h-20 md:w-24 mr-5 rounded-full bg-[#6662f5] text-white mb-5 mt-5'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
@@ -49,7 +49,7 @@ function Section1() {
                 />
               </svg>
             </div>
-            <div>
+            <div className='md:w-[70%]'>
               <h2 className='font-bold text-sm md:text-base'>
                 ALL THE TOOLS ONE PLATFORM
               </h2>
@@ -59,8 +59,8 @@ function Section1() {
               </p>
             </div>
           </div>
-          <div className='flex w-11/12 pl-5 items-center'>
-            <div className='text-white flex justify-center items-center h-10 w-20 md:h-20 md:w-24 mr-5 md:mr-10 rounded-full bg-[#6662f5] mb-5'>
+          <div className='flex w-11/12 pl-5 md:justify-center items-center md:m-auto'>
+            <div className='text-white flex justify-center items-center h-10 w-20 md:h-20 md:w-24 mr-5 rounded-full bg-[#6662f5] mb-5'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
@@ -75,7 +75,7 @@ function Section1() {
                 />
               </svg>
             </div>
-            <div>
+            <div className='md:w-[70%]'>
               <h2 className='font-bold text-sm md:text-base'>
                 NO TRIAL PERIOD
               </h2>
@@ -85,8 +85,8 @@ function Section1() {
               </p>
             </div>
           </div>
-          <div className='flex w-11/12 pl-5 items-center'>
-            <div className='text-white flex justify-center items-center h-10 w-20 md:h-20 md:w-24 mr-5 md:mr-10 rounded-full bg-[#6662f5]'>
+          <div className='flex w-11/12 pl-5 md:justify-center items-center  md:m-auto'>
+            <div className='text-white flex justify-center items-center h-10 w-20 md:h-20 md:w-24 mr-5 rounded-full bg-[#6662f5]'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
@@ -101,7 +101,7 @@ function Section1() {
                 />
               </svg>
             </div>
-            <div className=''>
+            <div className='md:w-[70%]'>
               <h2 className='font-bold text-sm md:text-base'>
                 NO CREDIT CARD REQUIRED
               </h2>
@@ -114,7 +114,6 @@ function Section1() {
         </div>
       </div>
 
-      
       <div className='flex flex-col text-center mt-16'>
         <h3 className='font-bold text-2xl'>What is included?</h3>
         <p className='text-sm text-gray-400 mt-5 mb-7'>
