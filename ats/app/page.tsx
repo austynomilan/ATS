@@ -65,7 +65,7 @@ export default async function Home() {
         </div>
 
         {/* rating on trust pilot */}
-        <div className="bg-[url('/curve.svg')] bg-no-repeat bg-cover w-full pt-10 md:pt-56">
+        <div className="bg-[url('/curve.svg')] bg-no-repeat bg-cover w-full pt-10 md:pt-56 lg:pt-80">
           <p className='text-[12px] text-white font-semibold md:text-base md:-mt-28 md:pl-52'>
             Read our review on Trust Pilot.
           </p>
