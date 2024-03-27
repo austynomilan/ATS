@@ -1,13 +1,30 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 import data from '../data.json';
 import { Button } from '@/components/ui/button';
+import JobModal from './JobModal';
 import {
   ExternalLinkIcon,
   RocketIcon,
   PaperPlaneIcon,
 } from '@radix-ui/react-icons';
+import { Job } from './types';
 
 function JobListings() {
+  const [selectedJob, setSelectedJob] = useState<Job | null>(null);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = (job: Job) => {
+    setSelectedJob(job);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   return (
     <div>
       <h1>Job Listings</h1>
@@ -32,7 +49,10 @@ function JobListings() {
                       <p>{job.company}</p>
                       <p>{job.location}</p>
                     </div>
-                    <ExternalLinkIcon className='absolute left-96' />
+                    <ExternalLinkIcon
+                      className='absolute left-96'
+                      onClick={() => openModal(job)}
+                    />
                     <Button
                       variant={'ghost'}
                       className='mb-3 absolute left-[20.8rem] top-10 text-[10px]'
@@ -47,6 +67,13 @@ function JobListings() {
           ))}
         </div>
       ))}
+      <div className=''>
+        <JobModal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          job={selectedJob}
+        />
+      </div>
     </div>
   );
 }
