@@ -2,14 +2,12 @@ import { Pencil2Icon } from '@radix-ui/react-icons';
 import { Button } from '@/components/ui/button';
 import Prefer from '@/components/Prefer';
 import JobListings from '@/components/JobListings';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
-
 function page() {
   return (
-    <main className='bg-gray-200 h-screen flex flex-col md:flex-row m-auto'>
+    <main className='bg-gray-200 h-screen flex flex-col md:flex-row justify-center m-auto'>
       <div className='bg-white md:h-1/3 rounded-lg md:px-5 flex flex-col items-center mx-1 my-3'>
         <ul className='mb-12 text-sm md:text-base flex md:flex-col'>
           <li className='flex flex-col md:flex-row items-center pt-5'>
@@ -33,10 +31,10 @@ function page() {
         </Button>
       </div>
 
-      <div className='h-auto'>
+      <div className='h-2/3 overflow-auto bg-white w-2/5 rounded-lg m-3 flex'>
         <JobListings />
       </div>
-      <div className=''>
+      <div className='bg-white md:h-1/3 rounded-lg mt-3 flex flex-col items-center justify-center'>
         <h2>Job Seeker guidance</h2>
         <p>recommended based your activity</p>
         <Link href='/'>
