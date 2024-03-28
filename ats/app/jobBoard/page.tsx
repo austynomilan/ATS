@@ -31,7 +31,7 @@ function page() {
         </Button>
       </div>
 
-      <div className='h-2/3 overflow-auto bg-white w-2/5 rounded-lg m-3 flex'>
+      <div className='h-2/3 overflow-auto bg-white md:w-2/5 rounded-lg m-3 flex'>
         <JobListings />
       </div>
       <div className='bg-white md:h-1/3 rounded-lg mt-3 flex flex-col items-center justify-center'>

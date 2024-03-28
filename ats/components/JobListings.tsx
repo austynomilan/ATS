@@ -7,8 +7,7 @@ import { Button } from '@/components/ui/button';
 import JobModal from './JobModal';
 import {
   ExternalLinkIcon,
-  RocketIcon,
-  PaperPlaneIcon,
+  RocketIcon
 } from '@radix-ui/react-icons';
 import { Job } from './types';
 
@@ -26,7 +25,7 @@ function JobListings() {
   };
 
   return (
-    <div>
+    <div className=''>
       <h1>Job Listings</h1>
       {data.industries.map((industry) => (
         <div key={industry.name}>
@@ -50,12 +49,12 @@ function JobListings() {
                       <p>{job.location}</p>
                     </div>
                     <ExternalLinkIcon
-                      className='absolute left-96'
+                      className='absolute left-72  md:left-96'
                       onClick={() => openModal(job)}
                     />
                     <Button
                       variant={'ghost'}
-                      className='mb-3 absolute left-[20.8rem] top-10 text-[10px]'
+                      className='mb-3 absolute left-60 md:left-[20.8rem] top-10 text-[10px]'
                     >
                       Apply
                       <RocketIcon className='ml-2 h-3 w-3' />
