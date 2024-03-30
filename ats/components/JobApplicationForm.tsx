@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './ui/button';
+import ApplyForm from './ApplyForm';
 
 interface JobApplicationFormProps {
   onClose: () => void;
@@ -23,8 +24,8 @@ const JobApplicationForm: React.FC<JobApplicationFormProps> = ({
         <p>role at {company}</p>
       </div>
       
-      {/* Add form fields for applying */}
-      <Button onClick={onClose}>Close</Button>
+      <ApplyForm />
+      {/* <Button onClick={onClose}>Close</Button> */}
     </form>
   );
 };

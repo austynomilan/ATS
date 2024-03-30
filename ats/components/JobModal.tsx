@@ -29,7 +29,7 @@ const JobModal: React.FC<JobModalProps> = ({ isOpen, onRequestClose, job }) => {
       className='absolute top-20 w-full text-center'
     >
       {job && (
-        <div className='relative md:flex md:justify-between bg-white w-3/4 md:w-2/4 m-auto mt-20 pt-5 md:h-[25rem] h-[30rem] rounded-lg shadow-2xl'>
+        <div className='relative md:flex md:justify-between bg-white w-3/4 md:w-2/4 m-auto mt-20 pt-5 pb-5 md:h-auto h-auto rounded-lg shadow-2xl'>
           <CrossCircledIcon
             onClick={() => {
               onRequestClose();
