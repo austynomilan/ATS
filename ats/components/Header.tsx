@@ -48,7 +48,7 @@ export default function Header() {
         <div className='flex items-center pr-5'>
           <ul className='text-center font-bold flex text-white'>
             <li className='mr-10'>
-              <Link href='/'>Job Board</Link>
+              <Link href='/jobBoard'>Job Board</Link>
             </li>
             <li className='mr-10'>Pricing</li>
             <li className='mr-10'>Blog</li>
